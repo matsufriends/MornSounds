@@ -17,7 +17,7 @@ namespace MornLib.Editor
         [SerializeField] private int _endingOffsetSample;
         [Header("NormalizeAmplitude"), SerializeField] private bool _isNormalizeAmplitude = true;
         [Range(0, 1f), SerializeField] private float _normalizeAmplitude = 0.8f;
-        [SerializeField] private string _underAssetsFolderName = "MornSounds";
+        [Header("Output"), SerializeField] private string _underAssetsFolderName = "MornSounds";
         [SerializeField] private List<AudioClip> _outputList;
         public List<AudioClip> ClipList => _clipList;
         public bool IsCutBeginningSilence => _isCutBeginningSilence;
