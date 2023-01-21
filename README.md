@@ -10,12 +10,17 @@ AudioClipに対し、下記の処理を施すEditor拡張です。
 .unitypackage を導入下さい。
 
 # 使い方
-１．上部のツールバーより、Morn / SoundProcessor を開く。
-２．Input/ClipListに、変換したいAudioClipを追加する。
-３．変換内容を設定する。（詳細は後述）
-４．Generateボタンを押す。
-５．Output/ OutputList に変換後のAudioClipが表示される。
-　　ファイルはデフォルト設定で Assets / MornSounds フォルダに書き出される。
+1．上部のツールバーより、Morn / SoundProcessor を開く。
+
+2．Input/ClipListに、変換したいAudioClipを追加する。
+
+3．変換内容を設定する。（詳細は後述）
+
+4．Generateボタンを押す。
+
+5．Output/ OutputList に変換後のAudioClipが表示される。
+
+※ファイルはデフォルト設定で Assets / MornSounds フォルダに書き出されます。
   
 # 設定方法
 * ClipList　変換するAudioClip
