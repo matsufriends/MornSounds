@@ -1,4 +1,5 @@
-﻿using MornLib.Editor;
+﻿using System.Linq;
+using MornLib.Editor;
 using MornSounds.Cores;
 using UnityEditor;
 using UnityEngine;
@@ -96,9 +97,17 @@ namespace MornSounds.Editor
         private static AudioClip SaveClip(AudioClip clip)
         {
             var instance = MornSoundProcessorSettings.instance;
-            if (AssetDatabase.IsValidFolder($"Assets/{instance.UnderAssetsFolderName}") == false)
+
+            var dirs = instance.UnderAssetsFolderName.Split('/');
+            var combinePath = "Assets";
+            foreach (var dir in dirs)
             {
-                AssetDatabase.CreateFolder("Assets", instance.UnderAssetsFolderName);
+                if (AssetDatabase.IsValidFolder($"{combinePath}/{dir}") == false)
+                {
+                    AssetDatabase.CreateFolder(combinePath, dir);
+                    Debug.Log($"フォルダー {combinePath}/{dir} を作成しました");
+                }
+                combinePath += $"/{dir}";
             }
 
             var path = $"Assets/{instance.UnderAssetsFolderName}/{clip.name}_Converted.wav";
