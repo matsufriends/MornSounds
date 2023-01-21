@@ -7,6 +7,14 @@ AudioClipに対し、下記の処理を施すEditor拡張です。
 * 最後の無音区間を削除
 * 音量をノーマライズ
 
+![スクリーンショット 2023-01-21 175820](https://user-images.githubusercontent.com/50489724/213864021-d9888f5f-f379-42de-b5ec-f42e13959edd.png)
+
+## 変換前
+![1](https://user-images.githubusercontent.com/50489724/213864025-8abf1124-8015-4425-9abb-8497504dd376.png)
+
+## 変換後
+![2](https://user-images.githubusercontent.com/50489724/213864027-1477992b-40c0-49ef-866a-43590d7c4f9b.png)
+
 # 導入方法
 .unitypackage を導入下さい。
 
