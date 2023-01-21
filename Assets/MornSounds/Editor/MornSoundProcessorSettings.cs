@@ -10,10 +10,10 @@ namespace MornLib.Editor
         [HideInInspector] public MornSoundProcessorWindow Window;
         [Header("Input"), SerializeField] private List<AudioClip> _clipList;
         [Header("CutBeginningSilence"), SerializeField] private bool _isCutBeginningSilence = true;
-        [Range(0, 1f), SerializeField] private float _beginningAmplitude = 0.1f;
+        [Range(0, 1f), SerializeField] private float _beginningAmplitude = 0.05f;
         [SerializeField] private int _beginningOffsetSample;
         [Header("CutEndingSilence"), SerializeField] private bool _isCutEndingSilence = true;
-        [Range(0, 1f), SerializeField] private float _endingAmplitude = 0.01f;
+        [Range(0, 1f), SerializeField] private float _endingAmplitude = 0.001f;
         [SerializeField] private int _endingOffsetSample;
         [Header("NormalizeAmplitude"), SerializeField] private bool _isNormalizeAmplitude = true;
         [Range(0, 1f), SerializeField] private float _normalizeAmplitude = 0.8f;
