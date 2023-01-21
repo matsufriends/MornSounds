@@ -21,7 +21,7 @@ AudioClipに対し、下記の処理を施すEditor拡張です。
 
 5．Output/ OutputList に変換後のAudioClipが表示される。
 
-※ファイルはデフォルト設定で Assets / MornSounds フォルダに書き出されます。
+※ファイルはデフォルト設定で Assets / MornSounds / Export フォルダに書き出されます。
   
 # 設定方法
 * ClipList　変換するAudioClip
